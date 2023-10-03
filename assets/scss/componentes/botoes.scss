@@ -1,0 +1,45 @@
+.ck-button input {
+    margin-right: 100px;
+}
+
+.ck-button {
+    margin: 8px 8px 8px 0;
+    background-color: #3d3d3d;
+    border-radius: 0;
+    overflow: auto;
+    float: left;
+    color: white
+}
+
+.ck-button {
+    float: left;
+    width: auto;
+}
+
+.ck-button span {
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    border-radius: 0;
+}
+
+.ck-button input {
+    position: absolute;
+    top: -20px;
+    display: none;
+}
+
+.ck-button input:hover+span {
+    cursor: pointer;
+}
+
+.ck-button input:checked+span {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.ck-button input:checked:hover+span {
+    color: #fff;
+}

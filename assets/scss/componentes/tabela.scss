@@ -1,0 +1,9 @@
+.tabela {
+    .tb_link{
+        color: black;
+        &:hover{
+            color: #3b98c8;
+            text-decoration: underline;
+        }
+    }
+}

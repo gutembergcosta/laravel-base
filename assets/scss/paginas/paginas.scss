@@ -1,0 +1,11 @@
+.formulario{
+    @media #{$monitor} {
+        .area{ width: calc(100% - 300px)!important;}
+        .side-area{min-width: 300px;max-width: 300px;}
+    }
+    
+    .quebra{width:100%; height: 0.1px; display: flex;}
+}
+
+
+

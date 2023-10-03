@@ -1,0 +1,52 @@
+{% extends "painel/layouts/layout-painel.htm" %}
+
+{% block pagina %}
+
+<div class="row">
+    <form id="formulario" class="formulario" action="{{actionForm}}" method="post">
+        
+        <input type="hidden" name="ref" value="{{ dataForm.ref }}">
+        <input type="hidden" name="id" value="{{ dataForm.id }}">
+        <input type="hidden" name="tipo" value="{{ dataForm.tipo }}">
+
+        <div class="col-md-12">
+            {{ blocoSlides | raw  }}
+        </div>
+        <div class="col-md-12">
+            {{ blocoMarcas | raw  }}
+        </div>
+        <div class="col-md-4">
+            {{ blocoLogo | raw  }}
+        </div>
+        <div class="col-md-4">
+            {{ blocoBannerLateral | raw  }}
+        </div>
+        <div class="col-md-4">
+            {{ blocoBannerCategoria | raw  }}
+        </div>
+
+    </form>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#formulario").submit(function (e) {
+                e.preventDefault();
+
+                var data = $(this).serializeArray();
+                
+                data.push({name: "texto",value: tinymce.get('texto').getContent()});
+
+                $(this).find('[type=submit]').attr('disabled', 'disabled');
+                enviaForm(data, $(this).attr('action'));
+                $(this).find('[type=submit]').removeAttr('disabled');
+
+            });
+
+
+        });
+    </script>
+
+
+</div>
+{% endblock %}

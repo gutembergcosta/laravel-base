@@ -1,0 +1,186 @@
+/*
+@media only screen and (max-width : 900px) {
+    font-size: 36px;
+    margin: 150px 0;
+  }
+
+  */
+
+  body {
+    background: #f5f5fa;
+    font-family: "poppins",Arial,sans-serif;
+  }
+  
+  .linha {
+    width: 100%;
+    float: left;
+  }
+  
+  .area-pagina {
+    max-width: 900px;
+  }
+  
+  .total {
+    width: 100%;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .altura_minima {
+    height: 600px;
+  }
+  
+  .justificar {
+    text-align: justify;
+  }
+  
+  .link-base {
+    color: white;
+  
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  
+  a:hover, .btn:hover {
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: #2d3053;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    line-height: 24px;
+  }
+  
+  a {
+    transition: all 0.1s ease-in;
+  }
+  
+  .btn-zap {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #5abcfd;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+  
+    &:hover {
+      background-color: #219d8e;
+    }
+  
+    i {
+      color: white;
+      margin-top: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .btn-zap {
+      bottom: 45px;
+      right: 20px;
+    }
+  }
+  
+  .card-artigo {
+    border: 1px solid #eee;
+    background: white;
+    margin: 20px 0 10px;
+  }
+  
+  form {
+    [type=text], [type=email], [type=url], select, textarea {
+      border-radius: 0;
+    }
+  
+    [type=text]:focus, [type=email]:focus, [type=url]:focus, select:focus, textarea:focus, select {
+      outline: none;
+      border: 1px solid #04002b;
+    }
+  
+    .blocos-02 .linha {
+      width: 47%;
+    }
+  
+    .btn_form {
+      font-weight: bold;
+      color: white;
+      border-radius: 0;
+      border: none;
+      margin-top: 18px;
+      background: #5abcfd;
+      padding: 8px 15px !important;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+  
+    label {
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    form .blocos-02 .linha {
+      width: 100%;
+    }
+  }
+  

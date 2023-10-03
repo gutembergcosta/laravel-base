@@ -1,0 +1,13 @@
+
+.hayagal{
+
+    margin-top: 30px;
+    @media #{$monitor} {
+
+        ._item{width: 20%; margin-bottom: 25px;}
+    }
+    @media #{$celular} {
+
+        ._item{margin-bottom: 12px;}
+    }
+}

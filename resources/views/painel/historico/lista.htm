@@ -1,0 +1,54 @@
+{% extends "painel/layouts/layout-painel.htm" %}
+
+{% block pagina %}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Histórico</h3>
+            </div>
+            <div class="panel-body">
+                <div class="">
+                    <table id="datatable" class="table table-bordered tabela">
+                        <thead>
+                            <tr>
+                                <th>Ação</th>
+                                <th style="width: 80px" >Tabela</th>
+                                <th style="width: 80px" >Usuário</th>
+                                <th style="width: 80px" >item</th>
+                                <th style="width: 150px" >data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in lista %}
+                                <tr id="linha-{{item.id}}">
+                                    <td>{{ item.acao }} </td>
+                                    <td>{{ item.tabela }} </td>
+                                    <td>{{ item.user_id }} </td>
+                                    <td>{{ item.ref_id }} </td>
+                                    <td>{{ item.databr() }} </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <script>
+                        $(document).ready(function () {
+                            $('#datatable').DataTable({
+                                
+                                language: {
+                                    url:"{{baseUrl}}assets/datatable/pt_br.json",
+                                
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

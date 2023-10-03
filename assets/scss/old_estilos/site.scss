@@ -1,0 +1,257 @@
+.total {
+    width: 100%;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .drt {
+    float: right;
+  }
+  
+  .esq {
+    float: left;
+  }
+  
+  .form-control {
+    border-color: #ced4da;
+    background: no-repeat;
+    box-shadow: none;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  }
+  
+  .btn-info {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #337ab7;
+  }
+  
+  .btn-success {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625;
+  }
+  
+  .btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+  }
+  
+  .btn-danger {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19;
+  }
+  
+  .panel-heading {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .filtros {
+    margin-bottom: 35px;
+  
+    .dropdown {
+      display: inline;
+    }
+  }
+  
+  label.file-upload {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: fit-content;
+  }
+  
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+  
+  .profile-left {
+    position: initial;
+  }
+  
+  .auth-box {
+    width: 30%;
+    max-width: 350px;
+    min-width: 300px;
+  
+    .content {
+      width: 90%;
+      margin: 4%;
+    }
+  }
+  
+  .tabela tr td {
+    line-height: 27px !important;
+  }
+  
+  /*===MEDIAQUERIES=========================================================================================*/
+  
+  /*Máx 320*/
+  @media only screen and (min-width: 320px) {}
+  
+  /*Limite 961 - 1280*/
+  @media only screen and (min-width: 961px) and (max-width: 1400px) {
+    #header #logo {
+      float: left;
+      margin: 10px 0 0;
+      width: 160px;
+      transition: all 0.6s;
+      padding-left: 0 !important;
+    }
+  
+    #nav-menu-container {
+      margin-top: 50px;
+      padding-right: 0;
+    }
+  
+    .nav-menu > li {
+      margin-left: 3px;
+    }
+  }
+  
+  /*Limite 768 - 960*/
+  @media only screen and (min-width: 961px) and (max-width: 1250px) {
+    .ini_home {
+      display: none;
+    }
+  }
+  
+  /*Limite 641 - 768*/
+  @media only screen and (min-width: 641px) and (max-width: 768px) {}
+  
+  /*Limite 321 - 480*/
+  @media only screen and (min-width: 321px) and (max-width: 480px) {}
+  
+  /*Máx 1500*/
+  @media only screen and (max-width: 1500px) {}
+  
+  /*Máx 1280*/
+  @media only screen and (max-width: 1280px) {}
+  
+  /*Máx 960*/
+  @media only screen and (max-width: 960px) {
+    #header {
+      padding: 0 0;
+      height: 75px;
+    }
+  
+    .topo_inicial {
+      display: none;
+    }
+  
+    #intro {
+      height: 40vh;
+  
+      .carousel-item {
+        height: 40vh;
+      }
+    }
+  
+    #mobile-nav ul .menu-has-children i {
+      color: #314e87;
+    }
+  
+    .pagina_area {
+      margin-top: 70px;
+    }
+  
+    #header.header-scrolled {
+      height: 70px;
+    }
+  
+    .news input {
+      margin-bottom: 15px;
+    }
+  
+    .newsletter .botao_cadastrar {
+      width: 100%;
+    }
+  
+    .h70, .h27 {
+      width: 100%;
+      padding: 0 3%;
+    }
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 23px;
+  
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  
+    &:before {
+      position: absolute;
+      content: "";
+      height: 17px;
+      width: 17px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+  }
+  
+  input {
+    &:checked + .slider {
+      background-color: #2196F3;
+    }
+  
+    &:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+  
+    &:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  }
+  
+  /* Rounded sliders */
+  
+  .slider.round {
+    border-radius: 34px;
+  
+    &:before {
+      border-radius: 50%;
+    }
+  }

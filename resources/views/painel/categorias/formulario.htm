@@ -1,0 +1,57 @@
+{% extends "painel/layouts/layout-painel.htm" %}
+
+{% block pagina %}
+
+<div class="row">
+    <form id="formulario" class="formulario" action="{{actionForm}}" method="post">
+        
+        <input type="hidden" name="id" value="{{ dataForm.id }}">
+        <input type="hidden" name="tipo" value="{{ dataForm.tipo }}">
+
+        <div class="col-md-12 area">
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Formulário</h3>
+                </div>
+                <div class="panel-body">
+
+                    <div id="msgz"></div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Nome:</label>
+                            <input type="text" class="form-control" name="nome" value="{{dataForm.nome}}" requiredx>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#formulario").submit(function (e) {
+                e.preventDefault();
+
+                var data = $(this).serializeArray();
+
+                $(this).find('[type=submit]').attr('disabled', 'disabled');
+                enviaForm(data, $(this).attr('action'));
+                $(this).find('[type=submit]').removeAttr('disabled');
+
+            });
+
+
+        });
+    </script>
+
+
+</div>
+{% endblock %}

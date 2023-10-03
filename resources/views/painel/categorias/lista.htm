@@ -1,0 +1,47 @@
+{% extends "painel/layouts/layout-painel.htm" %}
+
+{% block pagina %}
+<div class="row area-btn-novo">
+    <div class="col-md-12">
+        <a href="{{formUrl}}/novo" class="btn btn-success btn-xs"> 
+            <i class="fas fa-plus-circle"></i> Novo 
+        </a>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Páginas</h3>
+            </div>
+            <div class="panel-body">
+                <div class="">
+                    <table class="table table-bordered tabela">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th style="width: 80px"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in lista %}
+                                <tr id="linha-{{item.id}}">
+                                    <td><a class="tb_link" href="{{formUrl}}/edit/{{item.id}}">{{ item.nome }}</a> </td>
+                                    <td>
+                                        <a data-url="{{formUrl}}/destroy/{{item.id}}" class="btn btn-danger btn-xs deletar">
+                                            Excluir
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

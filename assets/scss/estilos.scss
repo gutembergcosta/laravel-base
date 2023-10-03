@@ -1,0 +1,117 @@
+// abstracts ===================
+@import "abstracts/mixins";
+@import "abstracts/variaveis";
+
+// abstracts ===================
+@import "base/default";
+@import "base/tipografia";
+@import "base/sizes";
+
+//blocos ===================
+@import "blocos/topo";
+@import "blocos/grids";
+@import "blocos/navbar";
+@import "blocos/sidebar";
+@import "blocos/titular";
+@import "blocos/tabela";
+
+//Páginas ===================
+@import "paginas/paginas";
+@import "paginas/home";
+@import "paginas/institucional";
+@import "paginas/contato";
+
+//componentes ===================
+@import "componentes/botoes";
+@import "componentes/card-artigos";
+@import "componentes/forms";
+@import "componentes/slider";
+@import "componentes/tabela";
+@import "componentes/hayagal";
+@import "componentes/busca-ajax";
+@import "componentes/area-novo";
+@import "componentes/erros";
+
+//Antigos ===================
+@import "old_estilos/main";
+@import "old_estilos/site";
+@import "old_estilos/estilos";
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: none;
+
+    .preloader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 120px;
+    }
+}
+
+.dropdown-menu-lateral{
+
+    .dropdown-menu{
+        min-width: 110px;
+        left: -74px;
+    }
+    
+}
+
+.dropdow-user-mobile{
+    .dropdown-menu{    position: absolute;
+        left: -100px;}
+}
+
+/*
+sass/
+|
+|- abstracts/
+|  |- _mixins             // Sass Mixins Folder
+|  |- _variables.scss     // Sass Variables
+|
+|- core/
+|  |- _reset.scss         // Reset
+|  |- _typography.scss    // Typography Rules
+|
+|- components/
+|  |- _buttons.scss       // Buttons
+|  |- _carousel.scss      // Carousel
+|  |- _slider.scss        // Slider
+|
+|- layout/
+|  |- _navigation.scss    // Navigation
+|  |- _header.scss        // Header
+|  |- _footer.scss        // Footer
+|  |- _sidebar.scss       // Sidebar
+|  |- _grid.scss          // Grid
+|
+|- pages/
+|  |- _home.scss          // Home styles
+|  |- _about.scss         // About styles
+|
+|- sections/ (or blocks/)
+|  |- _hero.scss          // Hero section
+|  |- _cta.scss           // CTA section
+|
+|- vendors/ (if needed)
+|  |- _bootstrap.scss     // Bootstrap
+|
+- app.scss                // Main Sass file
+*/
+
+  
+
+  
+
+  
+
+

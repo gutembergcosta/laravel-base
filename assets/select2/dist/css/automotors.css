@@ -1,0 +1,15 @@
+.select2-container--automotors{
+  border: 1px solid rgb(209, 213, 219) ;
+  background-color: rgb(243, 244, 246);
+  border-radius: 4px;
+  padding: 2px 0;
+  
+}
+.select2-container--automotors .select2-selection__rendered{
+  
+  padding: 5px 0;
+  
+}
+
+
+

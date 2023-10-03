@@ -1,0 +1,19 @@
+.busca-ajax{
+
+    width: 265px;
+    margin: 0;
+    float: right;
+
+    ._label{
+        width: 60px; 
+        float: left;
+    }
+
+    ._input{
+        width: 200px; 
+        float: right;
+        input{
+            padding: 4px 8px;
+        }
+    }
+}

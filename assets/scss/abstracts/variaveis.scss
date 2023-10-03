@@ -1,0 +1,26 @@
+$opensans: 'Open Sans', sans-serif;;
+
+$nunito: 'Nunito', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+
+$azul: #5abcfd;
+
+
+
+
+
+$tela-monitor: 901px;
+$tela-celular: 900px;
+
+$celular: "only screen and (max-width : 900px)";
+$monitor: "only screen and (min-width : 901px)";
+$notebook: "only screen and (max-width : 1300px)";
+
+/*
+@media #{$celular} {
+    font-size: 36px;
+    margin: 150px 0;
+  }
+
+  */
